@@ -21,15 +21,15 @@ WebUI.openBrowser('https://sayurku.com/')
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Page_Sayurku - Sayurku.com/loginButton'))
+WebUI.click(findTestObject('Page_Sayurku - Sayurku.com/loginButton1'))
 
-WebUI.setText(findTestObject('Page_Login - Sayurku.com/inputEmailTextElement'), 'lusianadina114@gmail.com')
+WebUI.setText(findTestObject('Page_Login - Sayurku.com/inputEmailTextElement1'), 'lusiana@gmail.com')
 
-WebUI.setEncryptedText(findTestObject('Page_Login - Sayurku.com/inputPasswordTextElement'), 'rb2CInWgqAcWJK5F8lpFybl5Q7jl9GH3')
+WebUI.setEncryptedText(findTestObject('Page_Login - Sayurku.com/inputPasswordtextElement1'), 'rb2CInWgqAf/BVEGoMat1w==')
 
-WebUI.click(findTestObject('Page_Login - Sayurku.com/loginBtn'))
+WebUI.click(findTestObject('Page_Login - Sayurku.com/loginBtn1'))
 
-WebUI.click(findTestObject('Page_Profil - Sayurku.com/home'))
+WebUI.verifyElementText(findTestObject('Page_Login - Sayurku.com/verifyInvalidEmailPass'), 'Email atau Password salah')
 
 WebUI.closeBrowser()
 
